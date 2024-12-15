@@ -1,0 +1,117 @@
+body{
+    background-color: aquamarine;
+}
+.imge{
+    background-image: url(https://st2.depositphotos.com/1594308/7409/i/450/depositphotos_74094757-stock-photo-couple-spending-time-outdoors.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+}
+.font-family{
+    font-weight:bold ;
+}
+.font-size{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 10px;
+    width: 40%;
+    margin-left: 180px;
+    cursor: pointer;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.font-size  :hover{
+    color: seagreen;
+}
+.text-white{
+    border: none;
+
+}
+.text-color{
+    color: seagreen ;
+}
+.flex{
+   
+    display: flex;
+}
+.bg-white{
+    border: none;
+}
+.bold{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 40%;
+}
+.float-end{
+    margin-left: 200px;
+}
+.border-1 {
+    width: 33%;
+    height: 140px;
+    font-size: 11px;
+    background-image: radial-gradient(seagreen,seagreen);
+}
+hr{
+    width: 2px;
+    height: 10px;
+    
+    
+}
+.border-2 {
+    width: 33%;
+    height: 140px;
+    font-size:11px;
+}
+.border-3 {
+    width: 34%;
+    height: 140px;
+    font-size:11px;
+    background-image: radial-gradient(seagreen,seagreen);
+}
+
+.b{
+    position: relative;
+    bottom: 25px;
+}
+.position{
+    position: relative;
+    bottom: 25px; 
+}
+.align-iteme-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    flex-direction: column;
+    width: 100%;
+}
+@media (max-width:800px) {
+
+    .imge{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .cursor-pointer{
+        overflow: hidden;
+        flex-direction: column;
+        position:absolute;
+        right: 0px;
+    }
+    .d-flex{
+
+        width: 100%;
+        height: 100%;
+    }
+    .font-size{
+        display: flex;
+        overflow: hidden;
+
+    
+    }
+}

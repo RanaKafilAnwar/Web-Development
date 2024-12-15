@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            background-image: url(https://t4.ftcdn.net/jpg/01/28/98/53/240_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg);
+        }
+        .sun{
+            width: 90px;
+            height: 90px;
+            border-radius: 49%;
+            background-color: hsl(60, 80%, 50%);
+            box-shadow: 4px 4px 25px  6px yellow ;
+            position: absolute;
+        }
+        
+        .moon{
+            width: 20px;
+            height: 20px;
+            background-color: silver;
+            border-radius: 50%;
+        }
+        .moon-orbit{
+            position: absolute;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            top: -17px;
+            left: -17px;
+            animation: orbit 5s linear infinite;
+        }
+        .earth{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-image: linear-gradient(green,blue , green ,blue);
+            position: relative;
+            top: 25px;
+        }
+       
+        .position{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: orbit 20.5s linear infinite; 
+        }
+        @keyframes orbit {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);  
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="sun"></div>
+             <div class="position">
+                <div class="earth">
+                    <div class="moon-orbit" >
+                        <div class="moon"></div>
+                    </div>
+                </div>
+             </div>
+       
+    </div>
+</body>
+</html>
